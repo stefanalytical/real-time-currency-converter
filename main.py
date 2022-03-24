@@ -3,7 +3,7 @@ from tkinter import *
 import tkinter as tk
 from tkinter import ttk
 
-
+# This class gets the exchange rate and returns the converted amount
 class RealTimeCurrencyConverter():
     def __init__(self,url):
             self.data = requests.get(url).json()
@@ -18,8 +18,10 @@ class RealTimeCurrencyConverter():
         amount = round(amount * self.currencies[to_currency], 4) 
         return amount
 
+# This class creates an interface using tkinter
 class App(tk.Tk):
 
+    # Creates a frame
     def __init__(self, converter):
         tk.Tk.__init__(self)
         self.title = 'Currency Converter'
