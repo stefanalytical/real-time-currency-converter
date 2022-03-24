@@ -76,6 +76,7 @@ class App(tk.Tk):
         convert = self.convert_button
         convert.place(relx=0.495, rely=.715, anchor=CENTER)
 
+    # This class takes input and converts into selected currency and displays in converted_amount box
     def perform(self):
         amount = float(self.amount_field.get())
         from_curr = self.from_currency_variable.get()
