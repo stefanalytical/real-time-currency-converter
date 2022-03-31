@@ -2,6 +2,7 @@ import requests
 from tkinter import *
 import tkinter as tk
 from tkinter import ttk
+import re
 
 # This class gets the exchange rate and returns the converted amount
 class RealTimeCurrencyConverter():
@@ -44,10 +45,12 @@ class App(tk.Tk):
         valid = (self.register(self.restrictNumberOnly), '%d', '%P')
         self.amount_field = Entry(self,bd = 3, relief = tk.RIDGE, justify = tk.CENTER,validate='key', validatecommand=valid, width = 20)
         self.converted_amount_field_label = Label(self, text = '', fg = 'black', bg = 'white', relief = tk.RIDGE, justify = tk.CENTER, width = 20, borderwidth = 3)
+        #Sets the position for the Entry box
         entry = self.amount_field
-        entry.place(relx= 0.16, rely= .1, anchor=CENTER)
+        entry.place(relx= .22, rely= .78, anchor=CENTER)
+        #Sets the position for the Converted Amount box
         label = self.converted_amount_field_label
-        label.place(relx= 0.19, rely= .1, anchor=CENTER)
+        label.place(relx= .773, rely= .78, anchor=CENTER)
 
         # Dropdown
         self.from_currency_variable = StringVar(self)
@@ -59,16 +62,10 @@ class App(tk.Tk):
         self.from_currency_dropdown = ttk.Combobox(self, textvariable=self.from_currency_variable,values=list(self.currency_converter.currencies.keys()), font = font, state = 'readonly', width = 22, justify = tk.CENTER)
         self.to_currency_dropdown = ttk.Combobox(self, textvariable=self.to_currency_variable,values=list(self.currency_converter.currencies.keys()), font = font, state = 'readonly', width = 22, justify = tk.CENTER)
         drop = self.from_currency_dropdown
-        drop.place(relx=0.17, rely=.11, anchor=CENTER)
+        drop.place(relx= 0.22, rely= 0.65, anchor=CENTER)
         drop2 = self.to_currency_dropdown
-        drop2.place(relx=0.20, rely=.11, anchor=CENTER)
+        drop2.place(relx= 0.773, rely= 0.65, anchor=CENTER)
         drop.option_add('*TCombobox*Listbox.Justify', 'center')
-
-        # Placing
-        self.from_currency_dropdown.place(x = 30, y= 120)
-        self.amount_field.place(x = 36, y = 150)
-        self.to_currency_dropdown.place(x = 340, y= 120)
-        self.converted_amount_field_label.place(x = 346, y = 150)
         
         # Convert button
         self.convert_button = Button(self, text = "Convert", fg = "black", height= "2", command = self.perform) 
@@ -88,7 +85,7 @@ class App(tk.Tk):
         self.converted_amount_field_label.config(text = str(converted_amount))
     
     def restrictNumberOnly(self, action, string):
-        regex = compile(r"[0-9]+")
+        regex = re.compile(r"[0-9,]*?(\.)?[0-9,]*$")
         result = regex.match(string)
         return (string == "" or (string.count('.') <= 1 and result is not None))
 
