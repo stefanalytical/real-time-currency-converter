@@ -9,9 +9,9 @@ import numpy as np
 import pandas as pd
 import json
 
-df = pd.read_csv('rates.csv')
-
-print(df) 
+df = pd.read_csv('rates.csv', usecols= ["Currency", "Rate"])
+newdf = df.nsmallest(16, "Rate")
+print(newdf) 
 
 # This class gets the exchange rate and returns the converted amount
 class RealTimeCurrencyConverter():
