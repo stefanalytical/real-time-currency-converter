@@ -3,15 +3,17 @@ from tkinter import *
 import tkinter as tk
 from tkinter import ttk
 import re
-import matplotlib
-import matplotlib.pyplot as plt
 import pandas as pd
+import matplotlib.pyplot as plt
 import json
 
-# Creates a dataframe using pandas that shows the 14 currencies more valuable than the USD
+# Creates a dataframe using pandas that shows the 15 currencies more valuable than the USD
 df = pd.read_csv('rates.csv')
 newdf = df.nsmallest(16, "Rate")
-print(newdf) 
+print(newdf)
+
+newdf.plot(x ='Currency', y='Rate', kind = 'bar', title= '15 Currencies More Valuable Than The USD')
+plt.show()
 
 # Gets the exchange rate and returns the converted amount
 class RealTimeCurrencyConverter():
