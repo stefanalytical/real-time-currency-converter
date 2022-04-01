@@ -32,22 +32,23 @@ pip install myplotlib
 ```
 ## Features Used
 
-Category 1:
+Category 1: Python Programming Basics:
+```bash
+- Implement a “master loop” console application where the user can repeatedly enter commands/perform actions, including choosing to exit the program.
+- Build a conversion tool that converts user input to another type and displays it (ex: converts cups to grams).	
+```
+
+Category 2: Utilize External Data:
 ```bash
 python Conversion.py
 ```
 
-Category 2:
+Category 3: Data Display:
 ```bash
 python Conversion.py
 ```
 
-Category 3:
-```bash
-python Conversion.py
-```
-
-Category 4:
+Category 4: Best Practices:
 ```bash
 python Conversion.py
 ```
