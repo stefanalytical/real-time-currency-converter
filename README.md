@@ -6,14 +6,15 @@ Disclaimer: No warranties or guarantees - express or implied, regarding exchange
 
 ## Installation
 
-First, clone the repository
+This project was created using Python 3.10. A virtual environment is required to run the program.
+
+First, clone the repository: [TEST](https://github.com/stefanalytical/real-time-currency-converter.git)
+
+Once the virtual environment is activated, please install the packages found in the requirements.txt folder.
+
 ```bash
-[TEST](https://github.com/stefanalytical/real-time-currency-converter.git)
+pip install -r requirements.txt
 ```
-[TEST](https://github.com/stefanalytical/real-time-currency-converter.git)
-```bash
-pip install tk
-pip install requests
-```
+
 
 ## Usage
