@@ -15,6 +15,10 @@ Once the virtual environment is activated, please install the packages found in 
 ```bash
 pip install -r requirements.txt
 ```
+Run the file
+```bash
+python Conversion.py
+```
 
 
 ## Usage
