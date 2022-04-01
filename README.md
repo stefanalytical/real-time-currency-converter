@@ -40,20 +40,22 @@ Category 1: Python Programming Basics:
 
 Category 2: Utilize External Data:
 ```bash
-python Conversion.py
+- Read data from an external file, such as text, JSON, CSV, etc, and use that data in your application.
+- Connect to an external/3rd party API and read data into your app
 ```
 
 Category 3: Data Display:
 ```bash
-python Conversion.py
+- Visualize data in a graph, chart, or other visual representation of data.
+- Display data in tabular form
 ```
 
 Category 4: Best Practices:
 ```bash
-python Conversion.py
+- The program should utilize a virtual environment and document library dependencies in a requirements.txt file.
 ```
 
 Stretch List:
 ```bash
-python Conversion.py
+- Use pandas, matplotlib, and/or numpy to perform a data analysis project. Ingest 2 or more pieces of data, analyze that data in some manner, and display a new result to a graph, chart, or other display.
 ```
