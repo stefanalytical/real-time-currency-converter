@@ -7,7 +7,7 @@ Disclaimer: No warranties or guarantees - express or implied, regarding exchange
 ## Installation
 
 ```bash
-pip install tkinter
+pip install tk
 pip install requests
 ```
 
