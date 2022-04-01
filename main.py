@@ -5,15 +5,15 @@ from tkinter import ttk
 import re
 import matplotlib
 import matplotlib.pyplot as plt
-import numpy as np
 import pandas as pd
 import json
 
-df = pd.read_csv('rates.csv', usecols= ["Currency", "Rate"])
+# Creates a dataframe using pandas that shows the 14 currencies more valuable than the USD
+df = pd.read_csv('rates.csv')
 newdf = df.nsmallest(16, "Rate")
 print(newdf) 
 
-# This class gets the exchange rate and returns the converted amount
+# Gets the exchange rate and returns the converted amount
 class RealTimeCurrencyConverter():
     def __init__(self,url):
             self.data = requests.get(url).json()
@@ -28,7 +28,7 @@ class RealTimeCurrencyConverter():
         amount = round(amount * self.currencies[to_currency], 4) 
         return amount
 
-# This class creates an interface using tkinter
+# Creates an interface using tkinter
 class App(tk.Tk):
 
     # Creates a frame
