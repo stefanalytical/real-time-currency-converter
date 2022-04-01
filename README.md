@@ -8,9 +8,8 @@ Disclaimer: No warranties or guarantees - express or implied, regarding exchange
 
 First, clone the repository
 ```bash
-[https://github.com/stefanalytical/real-time-currency-converter.git](https://github.com/stefanalytical/real-time-currency-converter.git)
+[TEST](https://github.com/stefanalytical/real-time-currency-converter.git)
 ```
-
 
 ```bash
 pip install tk
