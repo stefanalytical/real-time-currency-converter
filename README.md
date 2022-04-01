@@ -20,5 +20,36 @@ Run the file
 python Conversion.py
 ```
 
+Relevant packages that were used:
+```bash
+pip install requests
+pip install tk
+pip install pandas
+pip install myplotlib
+```
+## Features Used
 
-## Usage
+Category 1:
+```bash
+python Conversion.py
+```
+
+Category 2:
+```bash
+python Conversion.py
+```
+
+Category 3:
+```bash
+python Conversion.py
+```
+
+Category 4:
+```bash
+python Conversion.py
+```
+
+Stretch List:
+```bash
+python Conversion.py
+```
