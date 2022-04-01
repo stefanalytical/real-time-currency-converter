@@ -4,8 +4,8 @@ Do you need to convert a currency into another? This converter features over 150
 
 Disclaimer: No warranties or guarantees - express or implied, regarding exchange rate information returned by our API, its completeness or correctness, its accuracy, or its fitness for any particular purpose.
 
-<img src="./Preview.png" alt="Getting started"/>
-<img src="./Preview2.png" alt="Getting started"/>
+<img src="./Preview.png" alt="Getting started" width="600"/>
+<img src="./Preview2.png" alt="Getting started" width="600"/>
 
 ## Installation
 
