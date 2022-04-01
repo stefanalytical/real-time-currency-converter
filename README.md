@@ -4,8 +4,7 @@ Do you need to convert a currency into another? This converter features over 150
 
 Disclaimer: No warranties or guarantees - express or implied, regarding exchange rate information returned by our API, its completeness or correctness, its accuracy, or its fitness for any particular purpose.
 
-
-![Getting Started](./Users/stefanvuleta/RealTimeCurrencyConverter/Preview.png)
+<img src="./Users/stefanvuleta/RealTimeCurrencyConverter/Preview.png" alt="Getting started" />
 
 ## Installation
 
