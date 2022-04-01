@@ -12,9 +12,6 @@ df = pd.read_csv('rates.csv')
 newdf = df.nsmallest(16, "Rate")
 print(newdf)
 
-newdf.plot(x ='Currency', y='Rate', kind = 'bar', title= '15 Currencies More Valuable Than The USD')
-plt.show()
-
 # Gets the exchange rate and returns the converted amount
 class RealTimeCurrencyConverter():
     def __init__(self,url):
@@ -106,3 +103,6 @@ if __name__ == '__main__':
 
     App(converter)
     mainloop()
+
+newdf.plot(x ='Currency', y='Rate', kind = 'bar', title= '15 Currencies More Valuable Than The USD')
+plt.show()
