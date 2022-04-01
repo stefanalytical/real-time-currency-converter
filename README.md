@@ -10,7 +10,7 @@ First, clone the repository
 ```bash
 [TEST](https://github.com/stefanalytical/real-time-currency-converter.git)
 ```
-
+[TEST](https://github.com/stefanalytical/real-time-currency-converter.git)
 ```bash
 pip install tk
 pip install requests
