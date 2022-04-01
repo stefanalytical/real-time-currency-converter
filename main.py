@@ -102,7 +102,7 @@ class App(tk.Tk):
 
         self.converted_amount_field_label.config(text = str(converted_amount))
 
-    # Restricts entries to only numbers 
+    # Restricts entries to numbers only
     def restrictNumberOnly(self, action, string):
         regex = re.compile(r"[0-9,]*?(\.)?[0-9,]*$")
         result = regex.match(string)
