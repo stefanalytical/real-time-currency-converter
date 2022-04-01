@@ -29,6 +29,7 @@ pip install requests
 pip install tk
 pip install pandas
 pip install myplotlib
+pip install re
 ```
 ## Features Used
 
